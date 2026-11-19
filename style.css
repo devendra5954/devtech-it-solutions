@@ -46,6 +46,8 @@ button, input, select, textarea {
   margin: auto;
 }
 
+/* TOP BAR */
+
 .topbar {
   background: #070d18;
   color: #c5d2e6;
@@ -63,6 +65,8 @@ button, input, select, textarea {
   color: #65d8f0;
   font-weight: 700;
 }
+
+/* HEADER */
 
 .site-header {
   background: rgba(255,255,255,.96);
@@ -149,6 +153,8 @@ button, input, select, textarea {
   font-size: 27px;
   cursor: pointer;
 }
+
+/* HERO */
 
 .hero {
   position: relative;
@@ -402,6 +408,8 @@ h2 em {
   font-style: normal;
 }
 
+/* COMMON SECTIONS */
+
 .section-pad {
   padding: 95px 0;
 }
@@ -442,6 +450,8 @@ h2 {
   font-weight: 800;
   margin-top: 20px;
 }
+
+/* SERVICES */
 
 .section-heading {
   display: flex;
@@ -510,6 +520,8 @@ h2 {
   font-weight: 800;
   margin-top: 19px;
 }
+
+/* PROMISE */
 
 .promise {
   background: #f5f8fc;
@@ -588,6 +600,8 @@ h2 {
   font-size: 12px;
   margin-top: 4px;
 }
+
+/* PRICING */
 
 .pricing {
   background: white;
@@ -689,6 +703,8 @@ h2 {
   font-size: 11px;
 }
 
+/* CALL TO ACTION */
+
 .cta-band {
   background: linear-gradient(115deg, #0b1b35, #1258b9);
   color: white;
@@ -717,6 +733,8 @@ h2 {
   color: var(--blue);
   white-space: nowrap;
 }
+
+/* CONTACT */
 
 .contact {
   background: #f5f8fc;
@@ -838,185 +856,184 @@ h2 {
   margin-top: 10px;
 }
 
+/* DEVTECH PROFESSIONAL FOOTER */
 
-/* ===== PROFESSIONAL FOOTER ===== */
-
-.footer {
-  background: linear-gradient(135deg, #080f1d, #101f38);
-  color: #c3cfe0;
-  padding: 70px 0 22px;
+.dt-footer {
+  background: #081426;
+  color: #c2cede;
+  padding: 65px 20px 20px;
+  border-top: 1px solid #1c3553;
 }
 
-.footer-grid {
+.dt-footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dt-footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.2fr 1.3fr;
-  gap: 45px;
-  padding-bottom: 50px;
+  grid-template-columns: 1.5fr 1fr .9fr 1.3fr;
+  gap: 42px;
+  padding-bottom: 45px;
 }
 
-.footer-brand {
-  color: #ffffff;
+.dt-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
   margin-bottom: 22px;
 }
 
-.footer-about p {
-  color: #a8b7cc;
+.dt-logo-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  background: #1769e8;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+
+.dt-logo-icon span {
+  color: #55d9f0;
+}
+
+.dt-logo-text {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.dt-logo-text small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #55d9f0;
+  margin-top: 5px;
+}
+
+.dt-footer-about p,
+.dt-footer-note {
   font-size: 13px;
   line-height: 1.9;
+  color: #9eafc5;
   margin-bottom: 22px;
-  max-width: 300px;
 }
 
-.footer-col h3 {
-  color: #ffffff;
-  font-family: 'Manrope', sans-serif;
+.dt-footer-column h3 {
+  color: #fff;
   font-size: 16px;
   margin-bottom: 23px;
-  position: relative;
+  font-weight: 700;
 }
 
-.footer-col h3::after {
+.dt-footer-column h3::after {
   content: "";
   display: block;
   width: 35px;
   height: 3px;
-  background: #2878ff;
-  border-radius: 5px;
+  background: #2383ff;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
-.footer-links {
+.dt-footer-column ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-links li {
-  margin: 12px 0;
+.dt-footer-column li {
+  margin-bottom: 13px;
 }
 
-.footer-links a {
-  color: #a8b7cc;
+.dt-footer-column li a,
+.dt-footer-bottom a {
+  color: #aabbd0;
+  text-decoration: none;
   font-size: 12px;
   transition: .25s;
 }
 
-.footer-links a:hover,
-.footer-contact a:hover {
-  color: #58d6ed;
+.dt-footer-column li a:hover,
+.dt-footer-contact a:hover,
+.dt-footer-bottom a:hover {
+  color: #55d9f0;
   padding-left: 4px;
 }
 
-.footer-contact p {
+.dt-footer-contact p {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 17px;
   font-size: 12px;
-  color: #a8b7cc;
   overflow-wrap: anywhere;
 }
 
-.footer-contact p span {
-  color: #58d6ed;
-  font-size: 16px;
+.dt-footer-contact p span {
+  color: #55d9f0;
+  font-size: 17px;
 }
 
-.footer-contact a {
-  color: #c3cfe0;
-  transition: .25s;
+.dt-footer-contact a {
+  color: #c2cede;
+  text-decoration: none;
 }
 
-.footer-cta,
-.footer-whatsapp {
+.dt-footer-button,
+.dt-whatsapp-button {
   display: inline-block;
-  background: #2878ff;
-  color: #ffffff !important;
-  padding: 11px 16px;
-  border-radius: 7px;
-  font-size: 11px;
-  font-weight: 800;
+  padding: 11px 17px;
+  background: #1769e8;
+  color: #fff !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
   transition: .25s;
 }
 
-.footer-cta:hover,
-.footer-whatsapp:hover {
-  background: #155bd6;
+.dt-footer-button:hover {
+  background: #0e55c5;
   transform: translateY(-2px);
-  padding-left: 16px;
 }
 
-.footer-whatsapp {
-  margin-top: 5px;
+.dt-whatsapp-button {
   background: #128c55;
 }
 
-.footer-whatsapp:hover {
+.dt-whatsapp-button:hover {
   background: #0d7044;
+  transform: translateY(-2px);
 }
 
-.footer-bottom {
+.dt-footer-bottom {
   border-top: 1px solid #ffffff20;
   padding-top: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  color: #8999af;
-  font-size: 11px;
-}
-
-.footer-bottom-links {
-  display: flex;
-  gap: 22px;
   flex-wrap: wrap;
 }
 
-.footer-bottom-links a {
-  color: #58d6ed;
-  font-weight: 700;
+.dt-footer-bottom p {
+  font-size: 11px;
+  color: #8799b0;
+  margin: 0;
 }
 
-/* Tablet */
-@media (max-width: 950px) {
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .footer {
-    padding: 50px 0 20px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    padding-bottom: 35px;
-  }
-
-  .footer-about p {
-    max-width: 100%;
-  }
-
-  .footer-bottom {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .footer-bottom-links {
-    gap: 15px;
-  }
-}
- {
+.dt-footer-bottom div {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 20px;
-  color: #8999af;
-  font-size: 10px;
+  gap: 22px;
 }
+
+/* TABLET RESPONSIVE */
 
 @media (max-width: 950px) {
   .nav-links {
@@ -1034,7 +1051,14 @@ h2 {
   .promise-grid {
     gap: 40px;
   }
+
+  .dt-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
 }
+
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 700px) {
   .container {
@@ -1173,211 +1197,6 @@ h2 {
     padding: 24px 19px;
   }
 
-  .footer-top,
-  .footer-bottom {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *, *::before, *::after {
-    transition-duration: .01ms !important;
-  }
-}
-
-
-/* ===== DEVTECH PROFESSIONAL FOOTER ===== */
-
-.dt-footer {
-  background: #081426;
-  color: #c2cede;
-  padding: 65px 20px 20px;
-  border-top: 1px solid #1c3553;
-}
-
-.dt-footer-container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.dt-footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 0.9fr 1.3fr;
-  gap: 42px;
-  padding-bottom: 45px;
-}
-
-.dt-footer-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 22px;
-}
-
-.dt-logo-icon {
-  width: 43px;
-  height: 43px;
-  display: grid;
-  place-items: center;
-  background: #1769e8;
-  border-radius: 10px;
-  font-size: 25px;
-  font-weight: 800;
-  color: white;
-}
-
-.dt-logo-icon span {
-  color: #55d9f0;
-}
-
-.dt-logo-text {
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-.dt-logo-text small {
-  display: block;
-  font-size: 9px;
-  letter-spacing: 3px;
-  color: #55d9f0;
-  margin-top: 5px;
-}
-
-.dt-footer-about p,
-.dt-footer-note {
-  font-size: 13px;
-  line-height: 1.9;
-  color: #9eafc5;
-  margin-bottom: 22px;
-}
-
-.dt-footer-column h3 {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 23px;
-  font-weight: 700;
-}
-
-.dt-footer-column h3::after {
-  content: "";
-  display: block;
-  width: 35px;
-  height: 3px;
-  background: #2383ff;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-
-.dt-footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dt-footer-column li {
-  margin-bottom: 13px;
-}
-
-.dt-footer-column li a,
-.dt-footer-bottom a {
-  color: #aabbd0;
-  text-decoration: none;
-  font-size: 12px;
-  transition: 0.25s;
-}
-
-.dt-footer-column li a:hover,
-.dt-footer-contact a:hover,
-.dt-footer-bottom a:hover {
-  color: #55d9f0;
-  padding-left: 4px;
-}
-
-.dt-footer-contact p {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 17px;
-  font-size: 12px;
-  overflow-wrap: anywhere;
-}
-
-.dt-footer-contact p span {
-  color: #55d9f0;
-  font-size: 17px;
-}
-
-.dt-footer-contact a {
-  color: #c2cede;
-  text-decoration: none;
-}
-
-.dt-footer-button,
-.dt-whatsapp-button {
-  display: inline-block;
-  padding: 11px 17px;
-  background: #1769e8;
-  color: #fff !important;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-  transition: 0.25s;
-}
-
-.dt-footer-button:hover {
-  background: #0e55c5;
-  transform: translateY(-2px);
-}
-
-.dt-whatsapp-button {
-  background: #128c55;
-}
-
-.dt-whatsapp-button:hover {
-  background: #0d7044;
-  transform: translateY(-2px);
-}
-
-.dt-footer-bottom {
-  border-top: 1px solid #ffffff20;
-  padding-top: 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.dt-footer-bottom p {
-  font-size: 11px;
-  color: #8799b0;
-  margin: 0;
-}
-
-.dt-footer-bottom div {
-  display: flex;
-  gap: 22px;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .dt-footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
   .dt-footer {
     padding: 45px 18px 20px;
   }
@@ -1391,5 +1210,21 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .dt-footer-bottom div {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+  }
+}
