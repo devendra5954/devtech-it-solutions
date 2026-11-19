@@ -1,76 +1,41 @@
-/*
-  IMPORTANT: Update the business details in the CONFIG section before publishing.
-  WhatsApp number must include country code, digits only (India: 91XXXXXXXXXX).
-*/
-const CONFIG = {
-  businessName: "DevTech IT Solutions",
-  phoneDisplay: "+91 XXXXX XXXXX",
-  phoneLink: "+91XXXXXXXXXX",
-  whatsappNumber: "91XXXXXXXXXX",
-  email: "your-email@example.com"
-};
+const menuButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-document.getElementById("year").textContent = new Date().getFullYear();
+menuButton.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.textContent = isOpen ? '×' : '☰';
+});
 
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-menuToggle.addEventListener("click", () => {
-  const open = navMenu.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
-});
-navMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-  navMenu.classList.remove("open");
-  menuToggle.setAttribute("aria-expanded", "false");
-}));
-
-// Add your actual contact details in CONFIG above.
-document.querySelectorAll("[data-phone]").forEach(el => {
-  el.textContent = CONFIG.phoneDisplay;
-  el.href = "tel:" + CONFIG.phoneLink;
-});
-document.querySelectorAll("[data-email]").forEach(el => {
-  el.textContent = CONFIG.email;
-  el.href = "mailto:" + CONFIG.email;
-});
-const floatButton = document.getElementById("whatsappFloat");
-floatButton.href = "https://wa.me/" + CONFIG.whatsappNumber + "?text=" + encodeURIComponent("Hello " + CONFIG.businessName + ", I need IT support. Please contact me.");
-
-document.querySelectorAll("[data-service]").forEach(link => {
-  link.addEventListener("click", () => {
-    const select = document.querySelector('select[name="service"]');
-    if (select) select.value = link.dataset.service;
-  });
-});
-document.querySelectorAll("[data-plan]").forEach(link => {
-  link.addEventListener("click", () => {
-    const select = document.querySelector('select[name="service"]');
-    if (select) select.value = "IT AMC & Maintenance";
-    const message = document.querySelector('textarea[name="message"]');
-    if (message) message.value = "I am interested in the " + link.dataset.plan + " package. Please share the details.";
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.textContent = '☰';
   });
 });
 
-document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('supportForm').addEventListener('submit', function (event) {
   event.preventDefault();
-  const data = new FormData(this);
-  const required = ["name", "phone", "service", "message"];
-  for (const key of required) {
-    if (!String(data.get(key) || "").trim()) {
-      document.getElementById("formStatus").textContent = "Please complete all required fields.";
-      return;
-    }
-  }
+  const name = document.getElementById('customerName').value.trim();
+  const phone = document.getElementById('customerPhone').value.trim();
+  const service = document.getElementById('service').value;
+  const issue = document.getElementById('issue').value.trim();
+
+  if (!name || !phone || !service || !issue) return;
+
   const message = [
-    "NEW IT SUPPORT ENQUIRY",
-    "Business: " + CONFIG.businessName,
-    "Name: " + data.get("name"),
-    "Company: " + (data.get("company") || "Not provided"),
-    "Phone: " + data.get("phone"),
-    "Email: " + (data.get("email") || "Not provided"),
-    "Service: " + data.get("service"),
-    "Requirement: " + data.get("message")
-  ].join("\n");
-  document.getElementById("formStatus").textContent = "Opening WhatsApp with your enquiry. Please press Send in WhatsApp to submit it.";
-  const url = "https://wa.me/" + CONFIG.whatsappNumber + "?text=" + encodeURIComponent(message);
-  window.open(url, "_blank", "noopener");
+    'Hello DevTech IT Solutions, I need IT support.',
+    '',
+    `Name: ${name}`,
+    `Contact number: ${phone}`,
+    `Service: ${service}`,
+    `Issue: ${issue}`
+  ].join('\n');
+
+  document.getElementById('formStatus').textContent = 'Opening WhatsApp with your support request…';
+  const whatsappUrl = `https://wa.me/916395555954?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 });
