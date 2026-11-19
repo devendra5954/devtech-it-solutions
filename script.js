@@ -1,41 +1,88 @@
-const menuButton = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
 
-menuButton.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-  menuButton.textContent = isOpen ? '×' : '☰';
-});
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.textContent = '☰';
-  });
-});
+  // Current year in footer
+  const yearElement = document.getElementById("year");
 
-document.getElementById('year').textContent = new Date().getFullYear();
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 
-document.getElementById('supportForm').addEventListener('submit', function (event) {
-  event.preventDefault();
-  const name = document.getElementById('customerName').value.trim();
-  const phone = document.getElementById('customerPhone').value.trim();
-  const service = document.getElementById('service').value;
-  const issue = document.getElementById('issue').value.trim();
+  // Mobile navigation menu
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-  if (!name || !phone || !service || !issue) return;
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("active");
 
-  const message = [
-    'Hello DevTech IT Solutions, I need IT support.',
-    '',
-    `Name: ${name}`,
-    `Contact number: ${phone}`,
-    `Service: ${service}`,
-    `Issue: ${issue}`
-  ].join('\n');
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close menu" : "Open menu"
+      );
 
-  document.getElementById('formStatus').textContent = 'Opening WhatsApp with your support request…';
-  const whatsappUrl = `https://wa.me/916395555954?text=${encodeURIComponent(message)}`;
-  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    // Close menu after clicking a navigation link
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+  }
+
+  // WhatsApp support request form
+  const supportForm = document.getElementById("supportForm");
+  const formStatus = document.getElementById("formStatus");
+
+  if (supportForm) {
+    supportForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const customerName =
+        document.getElementById("customerName").value.trim();
+
+      const customerPhone =
+        document.getElementById("customerPhone").value.trim();
+
+      const service =
+        document.getElementById("service").value;
+
+      const issue =
+        document.getElementById("issue").value.trim();
+
+      if (!customerName || !customerPhone || !service || !issue) {
+        if (formStatus) {
+          formStatus.textContent = "Please complete all fields.";
+        }
+        return;
+      }
+
+      const message =
+        "Hello DevTech IT Solutions!\n\n" +
+        "I want to request IT support.\n\n" +
+        "Name: " + customerName + "\n" +
+        "Contact Number: " + customerPhone + "\n" +
+        "Service Required: " + service + "\n" +
+        "Issue Details: " + issue + "\n\n" +
+        "Please contact me regarding this request.";
+
+      const whatsappURL =
+        "https://wa.me/916395555954?text=" +
+        encodeURIComponent(message);
+
+      if (formStatus) {
+        formStatus.textContent =
+          "Opening WhatsApp. Please review your message and press Send.";
+      }
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+  }
+
 });
