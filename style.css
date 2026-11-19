@@ -1189,3 +1189,207 @@ h2 {
     transition-duration: .01ms !important;
   }
 }
+
+
+/* ===== DEVTECH PROFESSIONAL FOOTER ===== */
+
+.dt-footer {
+  background: #081426;
+  color: #c2cede;
+  padding: 65px 20px 20px;
+  border-top: 1px solid #1c3553;
+}
+
+.dt-footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dt-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.9fr 1.3fr;
+  gap: 42px;
+  padding-bottom: 45px;
+}
+
+.dt-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+
+.dt-logo-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  background: #1769e8;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+
+.dt-logo-icon span {
+  color: #55d9f0;
+}
+
+.dt-logo-text {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.dt-logo-text small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #55d9f0;
+  margin-top: 5px;
+}
+
+.dt-footer-about p,
+.dt-footer-note {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #9eafc5;
+  margin-bottom: 22px;
+}
+
+.dt-footer-column h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 23px;
+  font-weight: 700;
+}
+
+.dt-footer-column h3::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #2383ff;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.dt-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dt-footer-column li {
+  margin-bottom: 13px;
+}
+
+.dt-footer-column li a,
+.dt-footer-bottom a {
+  color: #aabbd0;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.25s;
+}
+
+.dt-footer-column li a:hover,
+.dt-footer-contact a:hover,
+.dt-footer-bottom a:hover {
+  color: #55d9f0;
+  padding-left: 4px;
+}
+
+.dt-footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 17px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.dt-footer-contact p span {
+  color: #55d9f0;
+  font-size: 17px;
+}
+
+.dt-footer-contact a {
+  color: #c2cede;
+  text-decoration: none;
+}
+
+.dt-footer-button,
+.dt-whatsapp-button {
+  display: inline-block;
+  padding: 11px 17px;
+  background: #1769e8;
+  color: #fff !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.dt-footer-button:hover {
+  background: #0e55c5;
+  transform: translateY(-2px);
+}
+
+.dt-whatsapp-button {
+  background: #128c55;
+}
+
+.dt-whatsapp-button:hover {
+  background: #0d7044;
+  transform: translateY(-2px);
+}
+
+.dt-footer-bottom {
+  border-top: 1px solid #ffffff20;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dt-footer-bottom p {
+  font-size: 11px;
+  color: #8799b0;
+  margin: 0;
+}
+
+.dt-footer-bottom div {
+  display: flex;
+  gap: 22px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dt-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .dt-footer {
+    padding: 45px 18px 20px;
+  }
+
+  .dt-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .dt-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
