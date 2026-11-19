@@ -1,116 +1,513 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Friendly and affordable computer and IT support for homes, students and small businesses. Windows, Linux, hardware, software, printer and email support.">
-  <meta name="theme-color" content="#0b1220">
-  <title>DevTech IT Solutions | Computer & IT Support</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta name="description" content="DevTech IT Solutions provides reliable desktop and laptop IT support, Windows and Linux installation, software installation, printer support and Thunderbird email configuration.">
+
+  <meta name="keywords" content="IT support, laptop repair, desktop support, Windows installation, Linux support, Thunderbird email support, printer support">
+
+  <meta name="author" content="DevTech IT Solutions">
+
+  <title>DevTech IT Solutions | Desktop & Laptop IT Support</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="topbar"><div class="container topbar-inner"><span>Friendly tech help. Clear pricing. No confusing jargon.</span><a href="tel:+916395555954">Call for support: +91 63955 55954</a></div></div>
+
+  <!-- Header -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="DevTech IT Solutions home"><span class="brand-mark">D<span>T</span></span><span>DevTech <small>IT SOLUTIONS</small></span></a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav-links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#why-us">Why DevTech</a><a href="#contact">Contact</a><a class="nav-cta" href="#contact">Get Support <span>↗</span></a></nav>
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">D</span>
+        <span>DevTech <strong>IT Solutions</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-button">Contact Us</a>
+      </nav>
+
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-glow"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="pulse"></span> YOUR FRIENDLY IT SUPPORT PARTNER</div>
-          <h1>Technology trouble?<br><em>We make it simple.</em></h1>
-          <p class="hero-lead">From a slow computer to Windows, Linux, printer and email setup — get practical, dependable IT help without the technical headache.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/916395555954?text=Hello%20DevTech%2C%20I%20need%20IT%20support." target="_blank" rel="noopener">Chat on WhatsApp <span>↗</span></a><a class="btn btn-ghost" href="#services">Explore services <span>↓</span></a></div>
-          <div class="trust-row"><div class="trust-avatars"><span>✓</span><span>⌘</span><span>+</span></div><p><strong>Patient, personal support</strong><br><small>For homes, students & small businesses</small></p></div>
-        </div>
-        <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=85" alt="Modern desktop computer setup on a desk">
-          <div class="floating-card card-one"><span class="float-icon">⌘</span><div><strong>Computer care</strong><small>Hardware & software</small></div></div>
-          <div class="floating-card card-two"><span class="float-icon green">✓</span><div><strong>Clear guidance</strong><small>Before work begins</small></div></div>
-          <div class="visual-caption"><span class="caption-dot"></span> One-to-one support that puts you first</div>
-        </div>
-      </div>
-      <div class="container hero-bottom"><span>SUPPORT FOR EVERYDAY TECH</span><div><b>Windows</b><i>•</i><b>Linux</b><i>•</i><b>Hardware</b><i>•</i><b>Software</b><i>•</i><b>Printers</b><i>•</i><b>Email</b></div></div>
-    </section>
 
-    <section class="welcome section-pad">
-      <div class="container welcome-grid">
-        <div><div class="eyebrow dark-eyebrow">A BETTER SUPPORT EXPERIENCE</div><h2>We listen first.<br><em>Then we fix.</em></h2></div>
-        <div class="welcome-text"><p>We know how frustrating it is when your computer stops working right when you need it. At DevTech, you can explain the issue in your own words. We’ll understand the problem, explain the next steps and discuss the cost before starting.</p><p class="welcome-sign">Your work matters. Let’s get your technology working again.</p></div>
-      </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
 
-    <section class="services section-pad" id="services">
-      <div class="container">
-        <div class="section-heading"><div><div class="eyebrow">WHAT WE CAN HELP WITH</div><h2>Everyday IT support,<br><em>all in one place.</em></h2></div><p>Practical help for your computer, operating system, applications, printer and email — remotely or by appointment.</p></div>
-        <div class="service-grid">
-          <article class="service-card"><div class="service-icon">▣</div><h3>Desktop & Laptop Support</h3><p>Slow system, startup issues, hanging, overheating checks and basic troubleshooting.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">⚙</div><h3>Hardware Diagnosis</h3><p>RAM, SSD/HDD, keyboard, display and other component diagnosis and upgrade guidance.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">▤</div><h3>Windows & Linux OS</h3><p>Operating system installation, updates, drivers, user setup and basic configuration.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">✳</div><h3>Software Installation</h3><p>Installation, updates and troubleshooting for commonly used applications.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">▧</div><h3>MS Office Support</h3><p>Microsoft Word, Excel, PowerPoint setup, activation guidance and common issues.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">▣</div><h3>Printer Support</h3><p>Printer installation, driver setup, print/scan configuration and connectivity troubleshooting.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">✉</div><h3>Email & Thunderbird</h3><p>Thunderbird setup, email account configuration, signatures and send/receive issues.</p><a href="#contact">Get help <span>↗</span></a></article>
-          <article class="service-card"><div class="service-icon">⌁</div><h3>System Setup & Configuration</h3><p>New PC setup, user accounts, essential settings, backup guidance and system clean-up.</p><a href="#contact">Get help <span>↗</span></a></article>
+      <div class="hero-text">
+        <span class="eyebrow">YOUR TRUSTED IT SUPPORT PARTNER</span>
+
+        <h1>
+          Reliable IT Support for
+          <span>Your Digital Needs</span>
+        </h1>
+
+        <p>
+          Professional desktop and laptop support for homes,
+          students and small businesses. Get help with Windows,
+          Linux, software, hardware, printers and email configuration.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get IT Support</a>
+
+          <a href="tel:+916395555954" class="btn btn-outline">
+            Call Now
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <span>✓ Friendly Support</span>
+          <span>✓ Affordable Pricing</span>
+          <span>✓ Remote Assistance</span>
         </div>
       </div>
-    </section>
 
-    <section class="promise section-pad" id="why-us">
-      <div class="container promise-grid">
-        <div class="promise-image"><img src="https://images.unsplash.com/photo-1516321318548-7b7c6e8e4e4d?auto=format&fit=crop&w=1100&q=85" alt="Technician helping a customer with a laptop"><div class="image-note"><strong>Support that feels human.</strong><span>Clear answers, one step at a time.</span></div></div>
-        <div class="promise-copy"><div class="eyebrow">THE DEVTECH PROMISE</div><h2>Good support is<br><em>more than a quick fix.</em></h2>
-          <div class="promise-list"><div><span>01</span><p><strong>We hear you out</strong><small>Tell us what happened. No technical language needed.</small></p></div><div><span>02</span><p><strong>We explain before we act</strong><small>Understand the solution, estimated time and charges first.</small></p></div><div><span>03</span><p><strong>We respect your time & data</strong><small>We take care while handling your device and information.</small></p></div></div>
-          <a class="text-link" href="#contact">Talk to a support person <span>↗</span></a>
-        </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=85"
+          alt="IT professional providing computer support"
+        >
       </div>
-    </section>
 
-    <section class="pricing section-pad" id="pricing">
-      <div class="container">
-        <div class="section-heading"><div><div class="eyebrow">SIMPLE STARTING PRICES</div><h2>Know the price.<br><em>Choose with confidence.</em></h2></div><p>These are indicative starting prices in INR. Final charges depend on the issue, device and work required. We confirm the quote before starting.</p></div>
-        <div class="price-grid">
-          <div class="price-card"><span class="price-tag">REMOTE SUPPORT</span><h3>Quick Help</h3><div class="price">₹299<small> / session</small></div><ul><li>Basic troubleshooting</li><li>Software / settings guidance</li><li>Up to 30 minutes</li></ul><a href="#contact" class="price-link">Request support ↗</a></div>
-          <div class="price-card featured"><span class="popular">POPULAR</span><span class="price-tag">INSTALLATION</span><h3>Software & Email</h3><div class="price">₹199<small> onwards</small></div><ul><li>Software installation from ₹199</li><li>Thunderbird setup from ₹249</li><li>MS Office support from ₹299</li></ul><a href="#contact" class="price-link">Request support ↗</a></div>
-          <div class="price-card"><span class="price-tag">OS & DEVICE</span><h3>System Setup</h3><div class="price">₹699<small> onwards</small></div><ul><li>Windows installation from ₹699</li><li>Linux installation from ₹799</li><li>Printer setup from ₹299</li></ul><a href="#contact" class="price-link">Request support ↗</a></div>
-        </div>
-        <p class="price-footnote">* Hardware parts, genuine software licences, data recovery, travel/onsite visits and complex repairs are charged separately after approval. OS installation price assumes a supported device and does not include a licence.</p>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE DO</span>
+        <h2>Our IT Support Services</h2>
+        <p>
+          Practical and affordable IT solutions to keep your
+          computers and systems running smoothly.
+        </p>
       </div>
-    </section>
 
-    <section class="cta-band"><div class="container cta-inner"><div><div class="eyebrow">LET'S SOLVE IT TOGETHER</div><h2>Tell us what's troubling<br>your computer.</h2><p>A real person will get back to you and help you find the next step.</p></div><a class="btn btn-light" href="https://wa.me/916395555954?text=Hello%20DevTech%2C%20I%20need%20IT%20support." target="_blank" rel="noopener">Start a WhatsApp chat <span>↗</span></a></div></section>
+      <div class="service-grid">
 
-    <section class="contact section-pad" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy"><div class="eyebrow">CONTACT DEVTECH</div><h2>We’re ready<br><em>to listen.</em></h2><p>Share a few details about the issue. We’ll contact you to understand it and discuss the best way forward.</p>
-          <div class="contact-method"><span>☎</span><div><small>CALL US</small><a href="tel:+916395555954">+91 63955 55954</a></div></div>
-          <div class="contact-method"><span>✉</span><div><small>EMAIL US</small><a href="mailto:devkumar8826@gmail.com">devkumar8826@gmail.com</a></div></div>
-          <div class="contact-method"><span>◉</span><div><small>WHATSAPP</small><a href="https://wa.me/916395555954" target="_blank" rel="noopener">Message DevTech</a></div></div>
-        </div>
-        <form class="contact-form" id="supportForm">
-          <h3>Request IT support</h3><p>Fill this in and WhatsApp will open with your request ready to send.</p>
-          <label for="customerName">Your name</label><input id="customerName" name="name" placeholder="e.g. Rahul Sharma" required>
-          <label for="customerPhone">Your contact number</label><input id="customerPhone" name="phone" type="tel" placeholder="Your phone number" required>
-          <label for="service">What do you need help with?</label><select id="service" name="service" required><option value="">Select a service</option><option>Desktop / Laptop support</option><option>Hardware diagnosis</option><option>Windows installation / support</option><option>Linux installation / support</option><option>Software installation</option><option>MS Office support</option><option>Printer support</option><option>Thunderbird / Email support</option><option>System configuration</option><option>Other issue</option></select>
-          <label for="issue">Briefly describe the issue</label><textarea id="issue" name="issue" rows="4" placeholder="Tell us what is happening..." required></textarea>
-          <button class="btn btn-primary form-submit" type="submit">Send support request <span>↗</span></button>
-          <small class="form-note">Your message is sent only when you press Send in WhatsApp. Please don't share passwords or sensitive information.</small>
-          <p class="form-status" id="formStatus" role="status"></p>
-        </form>
+        <article class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Desktop & Laptop Support</h3>
+          <p>
+            Troubleshooting, system performance issues,
+            slow computers and general desktop or laptop support.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🪟</div>
+          <h3>Windows Installation & Support</h3>
+          <p>
+            Windows installation, configuration, updates,
+            driver installation and common Windows issues.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🐧</div>
+          <h3>Linux Installation & Support</h3>
+          <p>
+            Linux installation, basic configuration,
+            package installation and troubleshooting.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Software Installation</h3>
+          <p>
+            Installation, configuration and troubleshooting
+            of commonly used computer software.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🖨️</div>
+          <h3>Printer Support</h3>
+          <p>
+            Printer installation, driver setup, printing
+            configuration and common printing issues.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✉</div>
+          <h3>Thunderbird Email Support</h3>
+          <p>
+            Mozilla Thunderbird email configuration,
+            account setup and troubleshooting of email-related issues.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📄</div>
+          <h3>MS Office Support</h3>
+          <p>
+            Microsoft Office installation, configuration
+            and troubleshooting of common Office issues.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Hardware Diagnosis</h3>
+          <p>
+            Basic hardware issue identification and
+            troubleshooting for desktops and laptops.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🖥️</div>
+          <h3>System Setup & Configuration</h3>
+          <p>
+            New computer setup, essential software,
+            user configuration and system customization.
+          </p>
+          <a href="#contact">Get help <span>↗</span></a>
+        </article>
+
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer"><div class="container footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">D<span>T</span></span><span>DevTech <small>IT SOLUTIONS</small></span></a><p>Friendly, affordable computer support<br>for everyday technology problems.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> DevTech IT Solutions. All rights reserved.</span><span>Computer & IT Support</span></div></footer>
+
+  <!-- Why Choose Us -->
+  <section class="why-us section-padding" id="about">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">WHY DEVTECH</span>
+        <h2>IT Support Made Simple</h2>
+        <p>
+          We focus on clear communication, practical solutions
+          and reliable computer support.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>Customer Friendly</h3>
+          <p>
+            Easy communication and support explained
+            in simple language.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Affordable Pricing</h3>
+          <p>
+            Reasonable starting prices with charges
+            explained before work begins.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Quick Assistance</h3>
+          <p>
+            Get help with common computer and
+            software-related problems.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pricing Section -->
+  <section class="pricing section-padding" id="pricing">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">OUR PRICING</span>
+        <h2>Simple & Affordable Pricing</h2>
+        <p>
+          Starting prices for common IT support services.
+          Final charges depend on the work required.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <h3>Remote Quick Support</h3>
+          <div class="price">₹299 <span>/ session</span></div>
+          <p>Up to 30 minutes of remote assistance.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Software Installation</h3>
+          <div class="price">₹199 <span>onwards</span></div>
+          <p>Software installation and basic configuration.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Thunderbird Email Setup</h3>
+          <div class="price">₹249 <span>onwards</span></div>
+          <p>Email account configuration and troubleshooting.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>MS Office Support</h3>
+          <div class="price">₹299 <span>onwards</span></div>
+          <p>Office installation and common issue resolution.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Windows Installation</h3>
+          <div class="price">₹699 <span>onwards</span></div>
+          <p>Windows installation and basic system setup.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Linux Installation</h3>
+          <div class="price">₹799 <span>onwards</span></div>
+          <p>Linux installation and basic configuration.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Printer Setup</h3>
+          <div class="price">₹299 <span>onwards</span></div>
+          <p>Printer installation and driver configuration.</p>
+          <a href="#contact" class="btn btn-outline">Enquire Now</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note">
+        *Prices are indicative starting prices. Final charges will
+        be confirmed before starting the work. Genuine software
+        licences, hardware parts, data recovery, travel and complex
+        repairs may cost extra. Operating system installation does
+        not include a paid software licence.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Need IT Support?</h2>
+        <p>
+          Tell us about your computer problem.
+          We will get back to you.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h3>Contact DevTech IT Solutions</h3>
+
+          <p>
+            Have a question or need technical assistance?
+            Contact us through phone, email or WhatsApp.
+          </p>
+
+          <div class="contact-item">
+            <span>📞</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+916395555954">+91 63955 55954</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span>✉️</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:devkumar8826@gmail.com">
+                devkumar8826@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span>💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/916395555954" target="_blank" rel="noopener">
+                Chat with us
+              </a>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/916395555954?text=Hello%20DevTech%20IT%20Solutions%2C%20I%20need%20IT%20support."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary whatsapp-button"
+          >
+            Message on WhatsApp
+          </a>
+
+        </div>
+
+
+        <!-- Enquiry Form -->
+        <div class="contact-form-box">
+
+          <h3>Send Your Enquiry</h3>
+
+          <form id="contactForm">
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="service">Select Service</label>
+
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option>Desktop & Laptop Support</option>
+                <option>Windows Installation & Support</option>
+                <option>Linux Installation & Support</option>
+                <option>Software Installation</option>
+                <option>Printer Support</option>
+                <option>Thunderbird Email Support</option>
+                <option>MS Office Support</option>
+                <option>Hardware Diagnosis</option>
+                <option>System Setup & Configuration</option>
+                <option>Other IT Support</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Describe Your Problem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us about your issue..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-button">
+              Send Enquiry on WhatsApp
+            </button>
+
+          </form>
+
+          <p class="form-note">
+            Your enquiry will open in WhatsApp so you can review
+            and send your message.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        <a href="#" class="footer-logo">
+          DevTech <strong>IT Solutions</strong>
+        </a>
+
+        <p>
+          Reliable desktop and laptop IT support
+          for your home and business.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="currentYear"></span>
+        DevTech IT Solutions. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/916395555954"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with us on WhatsApp"
+  >
+    WhatsApp
+  </a>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
