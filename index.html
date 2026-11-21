@@ -10,19 +10,86 @@
   <meta name="keywords" content="InfraCoTech, IT support, Linux server support, Linux server patching, Ansible automation, manual Linux patching, Ubuntu patching, RHEL patching, Amazon Linux, AWS support, Windows Server support, network support, desktop support">
 
   <meta name="author" content="InfraCoTech">
-
   <meta name="theme-color" content="#0b1220">
 
   <title>InfraCoTech | IT Support, Linux Server & Infrastructure Services</title>
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .founder-profile {
+      display: grid;
+      grid-template-columns: minmax(220px,.8fr) minmax(0,1.4fr);
+      gap: clamp(28px,5vw,64px);
+      align-items: center;
+      margin-top: 64px;
+      padding: clamp(22px,4vw,42px);
+      background: #f5f8fc;
+      border: 1px solid #e4ebf4;
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(11,18,32,.07);
+    }
+
+    .founder-photo-wrap {
+      width: 100%;
+      max-width: 340px;
+      justify-self: center;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #e8eef6;
+      box-shadow: 0 14px 34px rgba(11,18,32,.15);
+    }
+
+    .founder-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+
+    .founder-details h2 {
+      margin: 10px 0 4px;
+      color: #0b1220;
+      font-family: 'Manrope',sans-serif;
+      font-size: clamp(28px,4vw,40px);
+      line-height: 1.15;
+    }
+
+    .founder-details h3 {
+      margin: 0 0 18px;
+      color: #1769c2;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .founder-details .welcome-text {
+      margin: 0 0 14px;
+    }
+
+    @media(max-width:700px) {
+      .founder-profile {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        margin-top: 42px;
+        padding: 22px;
+      }
+
+      .founder-photo-wrap {
+        max-width: 260px;
+      }
+
+      .founder-details {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -64,15 +131,12 @@
 
   <!-- HERO SECTION -->
   <section class="hero" id="home">
-
     <div class="hero-glow"></div>
 
     <div class="container">
-
       <div class="hero-grid">
 
         <div class="hero-copy">
-
           <div class="eyebrow">
             <span class="pulse"></span>
             YOUR TRUSTED IT & INFRASTRUCTURE PARTNER
@@ -91,7 +155,6 @@
           </p>
 
           <div class="hero-actions">
-
             <a href="#contact" class="btn btn-primary">
               Get IT Support →
             </a>
@@ -99,11 +162,9 @@
             <a href="tel:+916395555954" class="btn btn-ghost">
               Call Us Now
             </a>
-
           </div>
 
           <div class="trust-row">
-
             <div class="trust-avatars">
               <span>I</span>
               <span>T</span>
@@ -115,13 +176,10 @@
               <br>
               <small>Desktop, Server & Infrastructure Support</small>
             </p>
-
           </div>
-
         </div>
 
         <div class="hero-visual">
-
           <img
             src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1000&q=85"
             alt="Professional IT infrastructure and technical support">
@@ -146,24 +204,19 @@
             <span class="caption-dot"></span>
             Technology support you can trust
           </div>
-
         </div>
 
       </div>
 
       <div class="hero-bottom">
-
         <span>OUR SUPPORT AREAS</span>
-
         <div>
           Desktop & Laptop <i>•</i>
           Linux & Windows Server <i>•</i>
           AWS & Cloud <i>•</i>
           Network & Automation
         </div>
-
       </div>
-
     </div>
   </section>
 
@@ -171,9 +224,7 @@
   <section class="welcome section-pad" id="about">
 
     <div class="container welcome-grid">
-
       <div>
-
         <div class="eyebrow dark-eyebrow">
           WELCOME TO INFRACOTECH
         </div>
@@ -182,11 +233,9 @@
           Technology & Infrastructure Support
           <em>You Can Count On.</em>
         </h2>
-
       </div>
 
       <div>
-
         <p class="welcome-text">
           At InfraCoTech, we understand how important reliable
           technology is for businesses and individuals.
@@ -205,19 +254,56 @@
         <p class="welcome-sign">
           Your Infrastructure. Our Responsibility.
         </p>
+      </div>
+    </div>
+
+    <!-- FOUNDER PROFILE -->
+    <div class="container">
+      <div class="founder-profile">
+
+        <div class="founder-photo-wrap">
+          <img
+            src="devendra-founder.jpg"
+            alt="Devendra Kumar, Founder of InfraCoTech"
+            class="founder-photo"
+            loading="lazy">
+        </div>
+
+        <div class="founder-details">
+          <div class="eyebrow dark-eyebrow">MEET OUR FOUNDER</div>
+
+          <h2>Devendra Kumar</h2>
+          <h3>Founder – InfraCoTech</h3>
+
+          <p class="welcome-text">
+            I am Devendra Kumar, an IT professional with 8 years
+            of experience and a Bachelor of Computer Applications
+            (BCA) degree. My focus is on practical IT support and
+            infrastructure solutions for individuals and businesses.
+          </p>
+
+          <p class="welcome-text">
+            Through InfraCoTech, I aim to help customers with
+            desktop and laptop support, Windows and Linux
+            administration, server maintenance, AWS infrastructure
+            and network troubleshooting.
+          </p>
+
+          <p class="welcome-sign">
+            Reliable support. Practical solutions.
+          </p>
+        </div>
 
       </div>
-
     </div>
+
   </section>
 
   <!-- SERVICES SECTION -->
   <section class="services section-pad" id="services">
 
     <div class="container">
-
       <div class="section-heading">
-
         <div>
           <div class="eyebrow dark-eyebrow">WHAT WE DO</div>
           <h2>Our IT & Infrastructure Services</h2>
@@ -228,12 +314,10 @@
           and infrastructure solutions for individuals
           and businesses.
         </p>
-
       </div>
 
       <div class="service-grid">
 
-        <!-- SERVICE 1 -->
         <article class="service-card">
           <div class="service-icon">💻</div>
           <h3>Desktop & Laptop Support</h3>
@@ -245,7 +329,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 2 -->
         <article class="service-card">
           <div class="service-icon">🪟</div>
           <h3>Windows Installation & Support</h3>
@@ -257,7 +340,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 3 -->
         <article class="service-card">
           <div class="service-icon">🐧</div>
           <h3>Linux Installation & Support</h3>
@@ -269,7 +351,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 4 -->
         <article class="service-card">
           <div class="service-icon">🔄</div>
           <h3>Linux Server Patching & Automation</h3>
@@ -284,7 +365,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 5 -->
         <article class="service-card">
           <div class="service-icon">☁️</div>
           <h3>AWS Cloud Support</h3>
@@ -297,7 +377,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 6 -->
         <article class="service-card">
           <div class="service-icon">🖥️</div>
           <h3>Windows Server Support</h3>
@@ -309,7 +388,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 7 -->
         <article class="service-card">
           <div class="service-icon">🌐</div>
           <h3>Network Support</h3>
@@ -322,7 +400,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 8 -->
         <article class="service-card">
           <div class="service-icon">⚙️</div>
           <h3>Software Installation</h3>
@@ -334,7 +411,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 9 -->
         <article class="service-card">
           <div class="service-icon">🖨️</div>
           <h3>Printer Support</h3>
@@ -346,7 +422,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 10 -->
         <article class="service-card">
           <div class="service-icon">✉️</div>
           <h3>Thunderbird Email Support</h3>
@@ -358,7 +433,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 11 -->
         <article class="service-card">
           <div class="service-icon">📄</div>
           <h3>MS Office Support</h3>
@@ -370,7 +444,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 12 -->
         <article class="service-card">
           <div class="service-icon">🔧</div>
           <h3>Hardware Diagnosis</h3>
@@ -381,7 +454,6 @@
           <a href="#contact">Get help ↗</a>
         </article>
 
-        <!-- SERVICE 13 -->
         <article class="service-card">
           <div class="service-icon">🛠️</div>
           <h3>System Setup & Configuration</h3>
@@ -393,17 +465,14 @@
         </article>
 
       </div>
-
     </div>
   </section>
 
   <!-- WHY CHOOSE US -->
   <section class="promise section-pad">
-
     <div class="container promise-grid">
 
       <div class="promise-image">
-
         <img
           src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85"
           alt="Professional IT and infrastructure workspace">
@@ -412,11 +481,9 @@
           <strong>IT Support Made Simple</strong>
           <span>Clear communication. Practical solutions.</span>
         </div>
-
       </div>
 
       <div class="promise-copy">
-
         <div class="eyebrow dark-eyebrow">
           WHY CHOOSE INFRACOTECH
         </div>
@@ -467,7 +534,6 @@
           </div>
 
         </div>
-
       </div>
 
     </div>
@@ -477,9 +543,7 @@
   <section class="pricing section-pad" id="pricing">
 
     <div class="container">
-
       <div class="section-heading">
-
         <div>
           <div class="eyebrow dark-eyebrow">TRANSPARENT PRICING</div>
           <h2>Our Starting Prices</h2>
@@ -490,7 +554,6 @@
           desktop and laptop IT support services.
           Server projects are quoted separately.
         </p>
-
       </div>
 
       <div class="price-grid">
@@ -591,15 +654,12 @@
         and complexity. Genuine software licences, hardware
         parts, data recovery and travel may cost extra.
       </p>
-
     </div>
   </section>
 
   <!-- CALL TO ACTION -->
   <section class="cta-band">
-
     <div class="container cta-inner">
-
       <div>
         <h2>Need Help With Your IT Infrastructure?</h2>
         <p>
@@ -611,18 +671,14 @@
       <a href="#contact" class="btn btn-light">
         Contact Us Today →
       </a>
-
     </div>
-
   </section>
 
   <!-- CONTACT SECTION -->
   <section class="contact section-pad" id="contact">
-
     <div class="container">
 
       <div class="section-heading">
-
         <div>
           <div class="eyebrow dark-eyebrow">GET IN TOUCH</div>
           <h2>Let's Solve Your IT Problem</h2>
@@ -633,14 +689,12 @@
           Windows Server, AWS, Ansible automation,
           network or other IT support.
         </p>
-
       </div>
 
       <div class="contact-grid">
 
         <!-- CONTACT DETAILS -->
         <div class="contact-copy">
-
           <h2>
             Contact
             <em>InfraCoTech</em>
@@ -681,12 +735,10 @@
               </a>
             </div>
           </div>
-
         </div>
 
         <!-- ENQUIRY FORM -->
         <div class="contact-form">
-
           <h3>Send Your IT Support Request</h3>
 
           <p>
@@ -715,39 +767,22 @@
             <label for="service">Select Service</label>
 
             <select id="service" name="service" required>
-
               <option value="">Choose a service</option>
-
               <option>Desktop & Laptop Support</option>
-
               <option>Windows Installation & Support</option>
-
               <option>Linux Installation & Support</option>
-
               <option>Linux Server Patching (Manual - Without Ansible)</option>
-
               <option>Linux Server Patching (Ansible Automation)</option>
-
               <option>AWS Cloud Support</option>
-
               <option>Windows Server Support</option>
-
               <option>Network Support</option>
-
               <option>Software Installation</option>
-
               <option>Printer Support</option>
-
               <option>Thunderbird Email Support</option>
-
               <option>MS Office Support</option>
-
               <option>Hardware Diagnosis</option>
-
               <option>System Setup & Configuration</option>
-
               <option>Other IT Support</option>
-
             </select>
 
             <label for="issue">Describe Your Problem</label>
@@ -771,33 +806,26 @@
             <p id="formStatus" class="form-status"></p>
 
           </form>
-
         </div>
 
       </div>
-
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="dt-footer">
-
     <div class="dt-footer-container">
-
       <div class="dt-footer-grid">
 
         <!-- COMPANY INTRODUCTION -->
         <div class="dt-footer-about">
-
           <a href="#home" class="dt-footer-logo">
-
             <span class="dt-logo-icon">I<span>.</span></span>
 
             <span class="dt-logo-text">
               InfraCoTech
               <small>IT & INFRASTRUCTURE</small>
             </span>
-
           </a>
 
           <p>
@@ -810,12 +838,10 @@
           <a href="#contact" class="dt-footer-button">
             Get IT Support →
           </a>
-
         </div>
 
         <!-- SERVICES -->
         <div class="dt-footer-column">
-
           <h3>Our Services</h3>
 
           <ul>
@@ -829,12 +855,10 @@
             <li><a href="#services">Network Support</a></li>
             <li><a href="#services">Printer Support</a></li>
           </ul>
-
         </div>
 
         <!-- COMPANY LINKS -->
         <div class="dt-footer-column">
-
           <h3>Company</h3>
 
           <ul>
@@ -845,12 +869,10 @@
             <li><a href="#contact">Get a Quote</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-
         </div>
 
         <!-- CONTACT INFORMATION -->
         <div class="dt-footer-column dt-footer-contact">
-
           <h3>Contact Us</h3>
 
           <p>
@@ -885,14 +907,12 @@
              target="_blank" rel="noopener">
             Chat With Us →
           </a>
-
         </div>
 
       </div>
 
       <!-- BOTTOM FOOTER -->
       <div class="dt-footer-bottom">
-
         <p>
           © <span id="year"></span> InfraCoTech.
           All Rights Reserved.
@@ -903,11 +923,9 @@
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
-
       </div>
 
     </div>
-
   </footer>
 
   <script src="script.js"></script>
